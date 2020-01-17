@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-import AppCard from './AppCard'
+import AppCard from './AppCard';
 
 class App extends React.Component {
 
@@ -13,7 +13,7 @@ class App extends React.Component {
     axios.get(`http://localhost:5000/api/players`)
       .then(res => {
         this.setState({ datas: res.data })
-        console.log(res.data)
+        // console.log(res.data)
       })
       .catch(err => console.log(err))
   }
@@ -29,7 +29,8 @@ class App extends React.Component {
             <h1>Id: {data.id}</h1>
           </div>
         ))} */}
-        <AppCard datas={this.state.datas}/>
+        <h1>Click Any Card To See The Magic!!!</h1>
+        <AppCard datas={this.state.datas} />
       </div>
     );
   }

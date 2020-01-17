@@ -1,6 +1,11 @@
-.Card {
+.card {
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
 }
