@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import AppCard from './AppCard';
-// import { render } from '@testing-library/react'
+import { render } from '@testing-library/react';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -15,7 +15,7 @@ it('render a diff ele', () => {
 });
 
 test('is the display there', () => {
-  const { getByText } = render(<App />);
+  const { getByText } = render(<AppCard />);
   getByText("Searches:");
   getByText("ID: ");
 });
