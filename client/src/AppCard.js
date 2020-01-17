@@ -27,11 +27,10 @@ export default function MediaCard(props) {
   // console.log(props)
 
   return (
-    <div className="card" id="darkmode">
+    <div className="card">
       {datas.map((data, index) => (
         <Card className={classes.card} key={index}>
           <CardActionArea
-
             onClick={toggleMode}
             className={darkMode ? 'toggle toggled' : 'toggle'}
           >

@@ -21,14 +21,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* {this.state.datas.map((data, index) => (
-          <div key={index}>
-            <h1>Name: {data.name}</h1>
-            <h1>Country: {data.country}</h1>
-            <h1>Searches: {data.searches}</h1>
-            <h1>Id: {data.id}</h1>
-          </div>
-        ))} */}
         <h1>Click Any Card To See The Magic!!!</h1>
         <AppCard datas={this.state.datas} />
       </div>
