@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import AppCard from './AppCard';
 import { render } from '@testing-library/react';
 
 it('renders without crashing', () => {
@@ -14,8 +13,12 @@ it('render a diff ele', () => {
   ReactDOM.render(<App />, p);
 });
 
-test('is the display there', () => {
-  const { getByText } = render(<AppCard />);
-  getByText("Searches:");
-  getByText("ID: ");
+test('header rendering', () => {
+  const { getByTestId } = render(<App />);
+  getByTestId(/header/i);
+});
+
+test('player cards rendering', () => {
+  const { getByTestId } = render(<App />);
+  getByTestId(/player-card/i);
 });

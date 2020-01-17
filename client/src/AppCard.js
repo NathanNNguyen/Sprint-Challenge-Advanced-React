@@ -27,7 +27,7 @@ export default function MediaCard(props) {
   // console.log(props)
 
   return (
-    <div className="card">
+    <div className="card" data-testid="player-card">
       {datas.map((data, index) => (
         <Card className={classes.card} key={index}>
           <CardActionArea
